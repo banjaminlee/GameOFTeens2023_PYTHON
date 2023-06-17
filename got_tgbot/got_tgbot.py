@@ -3,7 +3,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('5886946602:AAHC-b5UO88-NbCMDhgH0LxoKwIMb66uEkA')
+bot = telebot.TeleBot('5886946602:AAE6Bmx10T1gufSh2Pr6wJ5fRS1jy8WBtU0')
 #               1  2  3  4  5  6  7  Тестовий елемент списку, щоб бот визначився чи відповіли ви на запитання
 tarif_choose = [0, 0, 0, 0, 0, 0, 0, 0]
 """
@@ -116,7 +116,7 @@ def question1(message):
             \n2: Так, мене цікавить такий тариф!", reply_markup=markup)
                 
             elif message.text == 'Результати':
-                if tarif_choose[0] == max(tarif_choose) and tarif_choose[7] == 5:
+                if tarif_choose[0] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить тариф: [Вільний лайф]\
                     \n🪙Від 180грн / 4 тижні\
                     \n\n💻Інтернет: Безліміт\
@@ -129,7 +129,7 @@ def question1(message):
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
 
-                elif tarif_choose[1] == max(tarif_choose) and tarif_choose[7] == 5:
+                elif tarif_choose[1] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить тариф: [Смарт лайф]\
                     \n🪙Від 120грн / 4 тижні\
                     \n\n💻Інтернет: 25ГБ\
@@ -142,7 +142,7 @@ def question1(message):
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
 
-                elif tarif_choose[2] == max(tarif_choose) and tarif_choose[7] == 5:
+                elif tarif_choose[2] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить тариф: [Просто лайф]\
                     \n🪙Від 90грн / 4 тижні\
                     \n\n💻Інтернет: 8 ГБ\
@@ -155,7 +155,7 @@ def question1(message):
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
 
-                elif tarif_choose[3] == max(tarif_choose) and tarif_choose[7] == 5:
+                elif tarif_choose[3] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить тариф: [Platinum лайф]\
                     \n🪙Від 250грн / 4 тижні\
                     \n\n💻Інтернет: Безліміт\
@@ -168,7 +168,7 @@ def question1(message):
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
 
-                elif tarif_choose[4] == max(tarif_choose) and tarif_choose[7] == 5:
+                elif tarif_choose[4] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить тариф: [Шкільний лайф]\
                     \n🪙Від 150грн / 4 тижні\
                     \n\n💻Інтернет: 7 ГБ\
@@ -181,7 +181,7 @@ def question1(message):
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
 
-                elif tarif_choose[5] == max(tarif_choose) and tarif_choose[7] == 5:
+                elif tarif_choose[5] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить один з трьох тарифів: [Ґаджет]\
                     \n🪙Від 90грн / 12 тижнів\
                     \n\n💻Інтернет: від 150 МБ до безліміту\
@@ -194,7 +194,7 @@ def question1(message):
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
 
-                elif tarif_choose[6] == max(tarif_choose) and tarif_choose[7] == 5:
+                elif tarif_choose[6] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить один з трьох тарифів: [Смарт Сім`я]\
                     \n🪙Від 375 грн / 4 тижні\
                     \n\n💻Інтернет: від 20 ГБ до 50 ГБ\
@@ -207,7 +207,7 @@ def question1(message):
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
 
-                elif tarif_choose[7] != 5:
+                elif tarif_choose[7] == 0:
                     bot.send_message(message.chat.id, '‼️Помилка в обчисленні результатів\nМожливо ви дали відповіді не на всі запитання. Спробуйте пройти тест з початку')
 
                 else:
@@ -221,18 +221,12 @@ def callback_inline(call):
         if call.data == 'q1_1':
             tarif_choose[1] +=1
             tarif_choose[3] +=1
-
-            tarif_choose[7] +=1
         elif call.data == 'q1_2':
             tarif_choose[0] +=1
             tarif_choose[2] +=1
             tarif_choose[5] +=1
-
-            tarif_choose[7] +=1
         elif call.data == 'q1_3':
             tarif_choose[4] +=1
-
-            tarif_choose[7] +=1
         
         #ЗАПИТАННЯ 2
         if call.data == 'q2_1':
@@ -240,16 +234,10 @@ def callback_inline(call):
             tarif_choose[1] +=1
             tarif_choose[3] +=1
             tarif_choose[4] +=1
-
-            tarif_choose[7] +=1
         elif call.data == 'q2_2':
             tarif_choose[2] +=1
-
-            tarif_choose[7] +=1
         elif call.data == 'q2_3':
             tarif_choose[5] +=1
-
-            tarif_choose[7] +=1
         
         #ЗАПИТАННЯ 3
         if call.data == 'q3_1':
@@ -258,31 +246,21 @@ def callback_inline(call):
             tarif_choose[2] +=1
             tarif_choose[3] +=1
             tarif_choose[6] +=1
-
-            tarif_choose[7] +=1
         elif call.data == 'q3_2':
             tarif_choose[4] +=1
             tarif_choose[5] +=1
-
-            tarif_choose[7] +=1
 
         #ЗАПИТАННЯ 4
         if call.data == 'q4_1':
             tarif_choose[2] +=999
             tarif_choose[5] +=999
-
-            tarif_choose[7] +=1
         elif call.data == 'q4_2':
             tarif_choose[1] +=999
             tarif_choose[4] +=999
-
-            tarif_choose[7] +=1
         elif call.data == 'q4_3':
             tarif_choose[0] +=999
             tarif_choose[3] +=999
             tarif_choose[6] +=999
-
-            tarif_choose[7] +=1
         #ЗАПИТАННЯ 5
         if call.data == 'q5_1':
             tarif_choose[0] +=1
