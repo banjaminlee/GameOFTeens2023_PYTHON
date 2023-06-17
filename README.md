@@ -1,2 +1,2 @@
 # GameOFTeens2023_PYTHON
-Проєкт учасника команди "Mr. Robot" Сергія Богуша на хакатон від GameOfTeens
+Проєкт учасника Сергія Богуша на хакатон від GameOfTeens
