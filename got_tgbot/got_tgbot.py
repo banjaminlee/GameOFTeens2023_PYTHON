@@ -1,4 +1,4 @@
-#Нікнейм боту: @got_project_lifecellbot
+#Нікнейм боту: @got_project_lifecellbot 
 
 import telebot
 from telebot import types
