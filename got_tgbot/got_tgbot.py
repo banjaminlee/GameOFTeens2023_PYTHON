@@ -3,7 +3,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('5886946602:AAE6Bmx10T1gufSh2Pr6wJ5fRS1jy8WBtU0')
+bot = telebot.TeleBot('TOKEN')
 #               1  2  3  4  5  6  7  Тестовий елемент списку, щоб бот визначився чи відповіли ви на запитання
 tarif_choose = [0, 0, 0, 0, 0, 0, 0, 0]
 """
@@ -16,8 +16,19 @@ tarif_choose = [0, 0, 0, 0, 0, 0, 0, 0]
 7.Смарт сім'я   [6]
 """
 
+def stat_update():
+    tarif_choose[0] = 0
+    tarif_choose[1] = 0
+    tarif_choose[2] = 0
+    tarif_choose[3] = 0
+    tarif_choose[4] = 0
+    tarif_choose[5] = 0
+    tarif_choose[6] = 0
+    tarif_choose[7] = 0
+
 @bot.message_handler(commands=['start'])
 def greet(message):
+    stat_update()
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = types.KeyboardButton("Запитання 1")
     item2 = types.KeyboardButton("Запитання 2")
@@ -128,7 +139,8 @@ def question1(message):
                     \n\https://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/vilniy-life-2021/\
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
-
+                    stat_update()
+                    
                 elif tarif_choose[1] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить тариф: [Смарт лайф]\
                     \n🪙Від 120грн / 4 тижні\
@@ -141,6 +153,7 @@ def question1(message):
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/smart-life-2021/\
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
+                    stat_update()
 
                 elif tarif_choose[2] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить тариф: [Просто лайф]\
@@ -154,6 +167,7 @@ def question1(message):
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/prosto-life-2021/\
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
+                    stat_update()
 
                 elif tarif_choose[3] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить тариф: [Platinum лайф]\
@@ -167,6 +181,7 @@ def question1(message):
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/platinum-life-2021/\
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
+                    stat_update()
 
                 elif tarif_choose[4] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить тариф: [Шкільний лайф]\
@@ -180,6 +195,7 @@ def question1(message):
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/shkilniy/\
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
+                    stat_update()
 
                 elif tarif_choose[5] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить один з трьох тарифів: [Ґаджет]\
@@ -193,6 +209,7 @@ def question1(message):
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/gadget-series/\
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
+                    stat_update()
 
                 elif tarif_choose[6] == max(tarif_choose) and tarif_choose[7] == 1:
                     bot.send_message(message.chat.id, '🚀Тест завершено. За його результатами, вам найбільше підходить один з трьох тарифів: [Смарт Сім`я]\
@@ -206,13 +223,15 @@ def question1(message):
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/smart-simya-series/\
                     \n\n🔍P.S. Якщо ви не впевнені, що це саме той тариф, який підходить вам найбільше, ви завжди можете обрати інший на нашому сайті:\
                     \nhttps://www.lifecell.ua/uk/mobilnij-zvyazok/taryfy/')
+                    stat_update()
 
                 elif tarif_choose[7] == 0:
                     bot.send_message(message.chat.id, '‼️Помилка в обчисленні результатів\nМожливо ви дали відповіді не на всі запитання. Спробуйте пройти тест з початку')
-
+                    stat_update()
+                    
                 else:
-                    bot.send_message(message.chat.id, 'Я не розумію такої команди🥴')
-
+                    bot.send_message(message.chat.id, 'Я не розумію такої команди🥴 Спробуйте пройти тест ще раз!')
+                    stat_update()
 #ОБРОБКА ВІДПОВІДЕЙ
 @bot.callback_query_handler(func=lambda call: True)
 def callback_inline(call):
