@@ -2,15 +2,15 @@
 This is a Telegram chat bot made for hackathon GameOfTeens2023_PYTHON
 
 # Table of contents
-• [Features](https://github.com/pinkozz/GameOFTeens2023_PYTHON/edit/main/README.md#features)
+• [Features](https://github.com/pinkozz/GameOFTeens2023_PYTHON#features)
 
-• [Installation](https://github.com/pinkozz/GameOFTeens2023_PYTHON/edit/main/README.md#installation)
+• [Installation](https://github.com/pinkozz/GameOFTeens2023_PYTHON#installation)
 
-• [Usage](https://github.com/pinkozz/GameOFTeens2023_PYTHON/edit/main/README.md#usage)
+• [Usage](https://github.com/pinkozz/GameOFTeens2023_PYTHON#usage)
 
-• [Contributing](https://github.com/pinkozz/GameOFTeens2023_PYTHON/edit/main/README.md#contributing)
+• [Contributing](https://github.com/pinkozz/GameOFTeens2023_PYTHON#contributing)
 
-• [License](https://github.com/pinkozz/GameOFTeens2023_PYTHON/edit/main/README.md#license)
+• [License](https://github.com/pinkozz/GameOFTeens2023_PYTHON#license)
 # Features
 • User friendly interactions through a Telegram interface
 
