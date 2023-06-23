@@ -42,7 +42,7 @@ This is a Telegram chat bot made for hackathon GameOfTeens2023_PYTHON
    ```
 
 # Usage
-Once the bot is up and running, users can interact with it through Telegrma. The bot will greet user and ask them some questions to choose the best tariff. Users will be prompted to answer a series of questions about their usage requirements, such as internet usage, call minutes, and budget. Based on the responses, the bot will provide a personalized tariff recommendation using built-in neural network.
+Once the bot is up and running, users can interact with it through Telegrma. The bot will greet user and ask them some questions to choose the best tariff. Users will be prompted to answer a series of questions about their usage requirements, such as internet usage, call minutes, and budget. Based on the responses, the bot will provide a personalized tariff recommendation using built-in algorithm.
 
 # Contributing
 Contributions to the Lifecell Tariff Bot are welcome! If you'd like to contribute, please follow these steps:
