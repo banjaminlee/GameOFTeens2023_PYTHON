@@ -21,23 +21,23 @@ This is a Telegram chat bot made for hackathon GameOfTeens2023_PYTHON
 # Installation
 1. Clone this repository to your local machine using this command:
    
-   ```
+   ```shell
    git clone https://github.com/pinkozz/GameOFTeens2023_PYTHON
    ```
 2. Navigate to project folder:
    
-   ```
+   ```shell
    cd GameOFTeens2023_PYTHON
    ```
 3. Once you have installed the bot open the got_tgbot.py fileand change 'TOKEN' to your own API key:
    
-   ```
+   ```shell
    bot = telebot.TeleBot('TOKEN')
    ```
 
 4. Run the bot:
 
-   ```
+   ```shell
    python got_tgbot.py
    ```
 
